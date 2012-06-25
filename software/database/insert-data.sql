@@ -84,3 +84,4 @@ INSERT INTO user(username, password) VALUES ('student20','Student20!');
 INSERT INTO user(username, password) VALUES ('pduvall','password');
 INSERT INTO user(username, password) VALUES ('paul.duvall','password');
 INSERT INTO user(username, password) VALUES ('verify','verify');
+INSERT INTO user(username, password) VALUES ('verify1','verify1');
