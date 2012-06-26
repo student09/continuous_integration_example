@@ -5,6 +5,9 @@ INSERT INTO beer(id, beer_name, brewer, date_received) VALUES (4, 'Stewarts','Dr
 INSERT INTO beer(id, beer_name, brewer, date_received) VALUES (5, 'Old Dominion Root Beer','Old Dominion Brewery','2012-11-02');
 INSERT INTO beer(id, beer_name, brewer, date_received) VALUES (55, 'Hires','Dr Pepper Snapple Group','2012-06-18');
 
+INSERT INTO country (country, description) VALUES('CN','China');
+INSERT INTO country (country, description) VALUES('US','America');
+
 INSERT INTO state (state, description) VALUES('AL','Alabama');
 INSERT INTO state (state, description) VALUES('AK','Alaska');
 INSERT INTO state (state, description) VALUES('AZ','Arizona');

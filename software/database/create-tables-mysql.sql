@@ -12,6 +12,12 @@ CREATE TABLE state(
   PRIMARY KEY  (STATE)
 );
 
+CREATE TABLE country(
+  COUNTRY varchar(2) NOT NULL,
+  description  varchar(50),
+  PRIMARY KEY  (COUNTRY)
+);
+
 CREATE TABLE user (
   USERNAME varchar(16) default '' NOT NULL ,
   PASSWORD varchar(50) default '' NOT NULL ,
