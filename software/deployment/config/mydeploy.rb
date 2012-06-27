@@ -4,7 +4,7 @@ load '/usr/share/tomcat6/scripts/config/aws.config'
 
 sdb = AWS::SimpleDB.new
 
-set :sdb_domain, "cd29"
+set :sdb_domain, "cd09"
 
 set :domain do
   item = sdb.domains["#{sdb_domain}"].items['parameters']
