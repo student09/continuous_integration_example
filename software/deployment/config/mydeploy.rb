@@ -22,7 +22,7 @@ set :ip_address do
 end
 
 set :user,             "ec2-user"
-set :use_sudo,         true
+set :use_sudo,         false 
 set :deploy_to,        "/usr/share/tomcat6/webapps"
 set :artifact,         "brewery.war"
 set :artifact_url,     "https://s3.amazonaws.com/#{artifact_bucket}/#{artifact}"
