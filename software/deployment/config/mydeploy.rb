@@ -22,7 +22,7 @@ set :ip_address do
 end
 
 set :user,             "ec2-user"
-set :use_sudo,         false
+set :use_sudo,         true
 set :deploy_to,        "/usr/share/tomcat6/webapps"
 set :artifact,         "brewery.war"
 set :artifact_url,     "https://s3.amazonaws.com/#{artifact_bucket}/#{artifact}"
@@ -49,8 +49,8 @@ end
 namespace :deploy do
 
   task :setup do
-#    run "sudo chown -R tomcat:tomcat #{deploy_to}"
-#    run "sudo service tomcat6 stop"
+    run "sudo chown -R tomcat:tomcat #{deploy_to}"
+    run "sudo service tomcat6 stop"
   end
 
   task :deploy do
