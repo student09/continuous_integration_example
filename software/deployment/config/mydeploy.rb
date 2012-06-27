@@ -49,7 +49,7 @@ end
 namespace :deploy do
 
   task :setup do
-    run "sudo chown -R tomcat:tomcat #{deploy_to}"
+#    run "sudo chown -R tomcat:tomcat #{deploy_to}"
     run "sudo service tomcat6 stop"
   end
 
